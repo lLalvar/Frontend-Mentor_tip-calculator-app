@@ -1,0 +1,264 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --dark-grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --lighter-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  background-color: var(--light-grayish-cyan);
+}
+
+h1 {
+  color: hsl(183, 50%, 25%);
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 24px;
+  letter-spacing: 0.5rem;
+}
+
+.container {
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  padding: 0 2rem 2rem 2rem;
+}
+
+label {
+  color: var(--dark-grayish-cyan);
+  position: relative;
+}
+.label {
+  padding: 2rem 0;
+}
+
+input {
+  font-family: "Space Mono", monospace;
+  background-color: var(--lighter-grayish-cyan);
+  color: var(--very-dark-cyan);
+  text-align: right;
+  border: none;
+  margin-top: 0.5rem;
+  padding: 0.3rem 1.5rem;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+}
+input::placeholder {
+  color: var(--dark-grayish-cyan);
+}
+.input-bill {
+  position: relative;
+}
+
+input:focus {
+  outline-color: var(--strong-cyan);
+}
+
+.dollar-icon {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+}
+
+.select-tip p {
+  color: var(--dark-grayish-cyan);
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+li:not(:last-child) {
+  background-color: var(--very-dark-cyan);
+  padding: 0.5rem;
+  font-size: 24px;
+  color: var(--white);
+  text-align: center;
+  border-radius: 0.5rem;
+  transition: all 250ms linear;
+  user-select: none;
+}
+li:not(:last-child):hover {
+  background-color: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+  cursor: pointer;
+}
+li.active:not(:last-child) {
+  background-color: var(--strong-cyan);
+}
+li.active:not(:last-child):hover {
+  background-color: var(--strong-cyan);
+  color: var(--white);
+}
+
+.custom-id {
+  display: flex;
+}
+#custom {
+  padding: 0;
+  padding-right: 0.5rem;
+}
+#custom::placeholder {
+  font-size: 18px;
+}
+.custom-id.active {
+  background-color: none;
+}
+
+.fa-arrow-right {
+  font-size: 1.5rem;
+}
+
+#custom-btn {
+  padding: 0;
+  width: 50%;
+  background-color: var(--very-dark-cyan);
+  color: white;
+}
+#custom-btn:hover {
+  background-color: var(--light-grayish-cyan);
+  color: var(--very-dark-cyan);
+}
+
+ul input {
+  margin: 0;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.4rem;
+}
+
+.number-of-people {
+  display: flex;
+}
+
+.text {
+  flex: 1;
+}
+.alert-1 {
+  visibility: hidden;
+}
+.alert-2 {
+  visibility: hidden;
+}
+
+.people-text-err {
+  visibility: visible;
+  text-align: right;
+  color: hsl(0, 60%, 60%);
+}
+
+.people-input-err {
+  outline: 2px solid hsl(0, 60%, 60%);
+}
+
+.right-container {
+  background-color: var(--very-dark-cyan);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.tip-amount {
+  display: flex;
+  padding: 0.5rem 0;
+}
+
+h4 {
+  flex: 1;
+  color: var(--white);
+}
+h4 p {
+  color: var(--dark-grayish-cyan);
+}
+
+.amount {
+  font-size: 32px;
+  color: var(--strong-cyan);
+}
+button {
+  padding: 0.9rem;
+  background-color: var(--strong-cyan);
+  color: var(--very-dark-cyan);
+  font-weight: bold;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.4rem;
+  width: 100%;
+  transition: all 250ms linear;
+  user-select: none;
+}
+button:hover {
+  cursor: pointer;
+  background-color: var(--light-grayish-cyan);
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    margin: 0 10vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .main-container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+  }
+  .attribution {
+    align-self: flex-end;
+  }
+  h1 {
+    margin-bottom: 3rem;
+    align-self: flex-end;
+  }
+  .container {
+    display: grid;
+    align-self: flex-start;
+    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .right-container {
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-rows: 1fr;
+  }
+  ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .label-bottom {
+    padding-bottom: 0;
+  }
+  .label-top {
+    padding-top: 0;
+  }
+  #amount {
+    margin-bottom: 1rem;
+  }
+}

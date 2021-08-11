@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- hi -->
+    <div class="main-container">
+      <h1>SPLI<br />TTER</h1>
+      <div class="container">
+        <div class="left-container">
+          <div class="label label-top">
+            <label for="bill"
+              ><div class="bill">
+                <p class="text">Bill</p>
+                <p class="alert-1">Can't be zero</p>
+              </div>
+              <div class="input-bill">
+                <input id="bill" type="number" placeholder="0" />
+                <img class="dollar-icon" src="images/icon-dollar.svg" alt="" />
+              </div>
+            </label>
+          </div>
+          <div class="select-tip">
+            <p>Select Tip %</p>
+            <!-- BUTTONS CONTAINER -->
+            <ul>
+              <li data-id="5">5%</li>
+              <li data-id="10">10%</li>
+              <li data-id="15">15%</li>
+              <li data-id="25">25%</li>
+              <li data-id="50">50%</li>
+
+              <li data-id="0" class="custom-id">
+                <button id="custom-btn">
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+                <input id="custom" type="number" placeholder="Custom" / >
+              </li>
+            </ul>
+          </div>
+          <div class="label label-bottom">
+            <label for="number-of-people"
+              ><div class="number-of-people">
+                <p class="text">Number of People</p>
+                <p class="alert-2">Can't be zero</p>
+              </div>
+              <div class="input-bill">
+                <input
+                  class=""
+                  id="number-of-people"
+                  type="number"
+                  placeholder="0"
+                />
+                <img class="dollar-icon" src="images/icon-person.svg" alt="" />
+              </div>
+            </label>
+          </div>
+        </div>
+        <div class="right-container">
+          <div class="tip-total">
+            <div id="amount" class="tip-amount">
+              <h4>
+                Tip Amount
+                <p>/ person</p>
+              </h4>
+              <div id="amount-price" class="amount">$0.00</div>
+            </div>
+            <div id="total" class="tip-amount">
+              <h4>
+                Total
+                <p>/ person</p>
+              </h4>
+              <div id="total-price" class="amount">$0.00</div>
+            </div>
+          </div>
+          <button id="reset-btn">RESET</button>
+        </div>
+      </div>
+
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Lalvar</a>.
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
