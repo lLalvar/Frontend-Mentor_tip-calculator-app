@@ -26,5 +26,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/lLalvar)
-- Twitter - [@yourusername](https://twitter.com/ILalvar)
+- Frontend Mentor - [Lalvar](https://www.frontendmentor.io/profile/lLalvar)
+- Twitter - [Lalvar](https://twitter.com/ILalvar)
