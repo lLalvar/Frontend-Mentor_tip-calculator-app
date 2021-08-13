@@ -45,12 +45,9 @@ h1 {
   padding: 0 2rem 2rem 2rem;
 }
 
-label {
-  color: var(--dark-grayish-cyan);
-  position: relative;
-}
 .label {
   padding: 2rem 0;
+  color: var(--dark-grayish-cyan);
 }
 
 input {
@@ -187,11 +184,11 @@ ul input {
   padding: 0.5rem 0;
 }
 
-h4 {
+.tip-total-amount {
   flex: 1;
   color: var(--white);
 }
-h4 p {
+.tip-total-amount p {
   color: var(--dark-grayish-cyan);
 }
 
